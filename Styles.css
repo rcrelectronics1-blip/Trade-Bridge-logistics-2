@@ -1,0 +1,235 @@
+:root {
+  --orange:#f26522;
+  --deep:#023047;
+  --light:#f8f9fa;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: var(--light);
+  color: var(--deep);
+}
+
+/* NAV */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 40px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: var(--orange);
+}
+
+.logo span {
+  color: var(--deep);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--deep);
+  font-weight: 500;
+}
+
+.nav-btn {
+  background: var(--orange);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 20px;
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 80px 40px;
+  background: var(--orange);
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 2.6rem;
+  margin-bottom: 20px;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 20px;
+}
+
+/* BUTTONS */
+.btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  background: white;
+  color: var(--orange);
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  display: inline-block;
+  margin-top: 20px;
+  background: var(--orange);
+  color: white;
+  padding: 14px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* SHOP */
+.shop {
+  padding: 70px 40px;
+  text-align: center;
+}
+
+.store-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.store-buttons a {
+  background: white;
+  padding: 14px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: var(--deep);
+  font-weight: bold;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* OFFER */
+.offer {
+  background: white;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.offer-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 25px;
+}
+
+.offer-card {
+  background: var(--light);
+  padding: 30px;
+  border-radius: 50%;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* DELIVERY */
+.delivery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 80px 40px;
+  background: var(--orange);
+  color: white;
+  align-items: center;
+}
+
+.delivery-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* HOW */
+.how {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.how-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 20px;
+}
+
+.how-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.how-card span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: var(--orange);
+  color: white;
+  border-radius: 50%;
+  line-height: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* CTA */
+.cta {
+  background: var(--deep);
+  color: white;
+  text-align: center;
+  padding: 80px 40px;
+}
+
+/* FLOATING */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.float-btn {
+  background: white;
+  padding: 14px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: var(--deep);
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.float-btn.primary {
+  background: var(--orange);
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  background: #012a36;
+  color: #ccc;
+  text-align: center;
+}
