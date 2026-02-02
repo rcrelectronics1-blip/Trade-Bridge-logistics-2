@@ -1,0 +1,197 @@
+:root {
+  --ocean:#00b4d8;
+  --sun:#ffb703;
+  --deep:#023047;
+  --sand:#fefae0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: var(--sand);
+  color: var(--deep);
+}
+
+/* NAV */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: var(--deep);
+}
+
+.logo {
+  color: var(--sun);
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.logo span {
+  color: var(--ocean);
+}
+
+.navbar a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  padding: 120px 40px;
+  text-align: center;
+  background: linear-gradient(135deg, var(--ocean), var(--deep));
+  color: white;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 25px;
+  background: var(--sun);
+  padding: 15px 35px;
+  border-radius: 40px;
+  color: var(--deep);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* SHOP */
+.shop {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.marketplace-grid {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.marketplace-grid a {
+  background: white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: var(--deep);
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* IMAGE FEATURE */
+.image-feature {
+  padding: 80px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+/* SERVICES */
+.services {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.service-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* HOW */
+.how {
+  padding: 80px 40px;
+  background: var(--ocean);
+  color: white;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.step span {
+  display: block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  background: var(--sun);
+  color: var(--deep);
+  font-weight: bold;
+  margin: 0 auto 10px;
+}
+
+/* CTA */
+.cta {
+  padding: 80px 40px;
+  text-align: center;
+  background: var(--deep);
+  color: white;
+}
+
+.btn-secondary {
+  display: inline-block;
+  margin-top: 20px;
+  background: var(--ocean);
+  padding: 15px 35px;
+  border-radius: 40px;
+  color: white;
+  text-decoration: none;
+}
+
+/* FLOATING BUTTONS */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.float-btn {
+  background: white;
+  padding: 14px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: var(--deep);
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.float-btn.primary {
+  background: var(--sun);
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  background: #012a36;
+  color: #ccc;
+  text-align: center;
+}
